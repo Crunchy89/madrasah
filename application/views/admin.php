@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Ma+ Yasfa'an NW Gerantung</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url() ?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,8 @@
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url() ?>assets/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="<?= base_url() ?>assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 
 </head>
 
@@ -33,7 +35,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">Admin Page</div>
             </a>
 
             <!-- Divider -->
@@ -57,14 +59,21 @@
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
+                    <i class="fas fa-fw fa-laptop"></i>
+                    <span>Web</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
+                        <h6 class="collapse-header">Web Menu</h6>
+                        <a class="collapse-item" href="<?= site_url('berita') ?>">Berita</a>
+                        <a class="collapse-item" href="<?= site_url('info') ?>">Info Sekolah</a>
+                        <a class="collapse-item" href="<?= site_url('agenda') ?>">Agenda</a>
+                        <a class="collapse-item" href="<?= site_url('sejarah') ?>">Sejarah</a>
+                        <a class="collapse-item" href="<?= site_url('visi') ?>">Visi Misi</a>
+                        <a class="collapse-item" href="<?= site_url('kondisi') ?>">Kondisi Sekolah</a>
+                        <a class="collapse-item" href="<?= site_url('struktur') ?>">Struktur Organisasi</a>
+                        <a class="collapse-item" href="<?= site_url('staff') ?>">Staff</a>
+                        <a class="collapse-item" href="<?= site_url('gallery') ?>">Gallery</a>
                     </div>
                 </div>
             </li>
@@ -378,6 +387,8 @@
             </div>
         </div>
     </div>
+
+    <script src="<?= base_url() ?>assets/ckeditor/ckeditor.js"></script>
     <!-- Bootstrap core JavaScript-->
     <script src="<?= base_url() ?>assets/vendor/jquery/jquery.min.js"></script>
     <script src="<?= base_url() ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -387,13 +398,11 @@
 
     <!-- Custom scripts for all pages-->
     <script src="<?= base_url() ?>assets/js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="<?= base_url() ?>assets/vendor/chart.js/Chart.min.js"></script>
+    <script src="<?= base_url() ?>assets/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?= base_url() ?>assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="<?= base_url() ?>assets/js/demo/chart-area-demo.js"></script>
-    <script src="<?= base_url() ?>assets/js/demo/chart-pie-demo.js"></script>
+    <script src="<?= base_url() ?>assets/js/demo/datatables-demo.js"></script>
 
 </body>
 

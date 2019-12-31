@@ -7,18 +7,19 @@
 			</div>
 		</div>
 		<div class="row text-center mt-3">
-
-			<div class="col-md-4">
-				<div class="card">
-					<img src="..." class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="#">Baca Selengkapnya</a>
+			<?php foreach ($news as $beritas) : ?>
+				<div class="col-md-4">
+					<div class="card bg-secondary">
+						<div class="transform">
+							<img src="<?= base_url('assets/img/berita/') . $beritas->gambar_berita ?>" class="card-img-top " alt="..." width="100%" height="250px">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title"><?= $beritas->judul_berita ?></h5>
+							<a href="#">Baca Selengkapnya</a>
+						</div>
 					</div>
 				</div>
-			</div>
-
+			<?php endforeach; ?>
 		</div>
 		<p class="text-center mt-2"><a href="">Lihat lebih banyak</a></p>
 	</div>

@@ -18,6 +18,7 @@ class Home extends MY_Controller
 		$data['kontak'] = '#kontak';
 		$data['berita'] = '#berita';
 		$data['title'] = 'Beranda';
+		$data['news'] = $this->db->query("SELECT * FROM berita WHERE status = 1 ORDER BY id_berita DESC LIMIT 6")->result();
 		front_page('index', $data);
 	}
 }

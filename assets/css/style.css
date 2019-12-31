@@ -10,3 +10,16 @@
     background-attachment: fixed;
     background-size: cover;
 }
+
+.transform {
+    overflow: hidden;
+}
+
+.transform img {
+    -webkit-transition: .5s;
+}
+
+.transform:hover img {
+    transition: .5s;
+    transform: scale(1.2);
+}
